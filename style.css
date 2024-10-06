@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    color: var(--Stone600);
+}
+
+:root {
+    --Stone100: hsl(30, 54%, 90%);
+    --Stone150: hsl(30, 18%, 87%);
+    --Stone600: hsl(30, 10%, 34%);
+    --Stone900: hsl(24, 5%, 18%);
+    --Brown800: hsl(14, 45%, 36%);
+    --Rose800: hsl(332, 51%, 32%);
+    --Rose50: hsl(330, 100%, 98%);
+}
+
+body {
+    background-color: var(--Stone100);
+}
+
+p {
+    font-family: "Outfit", sans-serif;
+}
+h2 {
+    color: var(--Brown800);
+    font-family: "Young Serif", sans-serif;
+    font-weight: 400;
+    margin-bottom: 1em;
+}
+hr {
+    background-color: var(--Stone150);
+    height: 2px;
+    margin: 45px 0;
+}
+
+#omelette {
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 2em;
+}
+
+.main {
+    margin: 5em 0;
+    width: 100%;
+    justify-content: center;
+}
+
+.recipe {
+    min-width: 570px;
+    max-width: 570px;
+    margin: 0 auto;
+    padding: 2em;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 25px -25px;
+}
+
+.title {
+    margin-bottom: 2em;
+}
+.title h1 {
+    font-family: "Young Serif", sans-serif;
+    font-weight: 400;
+    color: var(--Stone900);
+    margin-bottom: 1em;
+}
+
+.prep {
+    font-family: "Outfit", sans-serif;
+    padding: 1.5em;
+    margin-bottom: 1em;
+    border-radius: 20px;
+    background-color: var(--Rose50);
+}
+.prep h3 {
+    color: var(--Rose800);
+}
+.prep ul {
+    margin-left: 15px;
+    padding: 10px;
+}
+.prep ul li {
+    padding-left: 10px;
+    margin-bottom: 0.8em;
+}
+
+.ingredient {
+    font-family: "Outfit", sans-serif;
+}
+.ingredient ul {
+    margin-left: 25px;
+}
+.ingredient ul li {
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+.instruction {
+    font-family: "Outfit", sans-serif;
+    margin-bottom: 2em;
+}
+.instruction ol {
+    margin-left: 25px;
+}
+.instruction ol li {
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+.instruction ol li::marker {
+    font-family: "Outfit", sans-serif;
+    color: var(--Brown800);
+}
+
+.nutrition {
+    font-family: "Outfit", sans-serif;
+    margin-top: 1em;
+}
+.nutrition table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+}
+.nutrition table tr {
+    border-bottom: 1px solid var(--Stone150);
+}
+.nutrition table tr:last-child {
+    border-bottom: none;
+}
+.nutrition table tr td {
+    padding: 1em;
+    padding-left: 2em;
+}
+.nutrition table tr td b {
+    color: var(--Brown800);
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    width: 100%;
+    height: 1em;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media screen and (max-width: 570px){
+    main {
+        padding: 0 2em;
+    }
+
+    #omelette {
+        width: 100%;
+        border-radius: 0;
+        margin-bottom: 2em;
+    }
+
+    .main {
+        margin: 0;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .recipe {
+        min-width: unset;
+        max-width: unset;
+        margin: 0;
+        padding: 0;
+        background-color: white;
+        border-radius: 0;
+        box-shadow: none;
+    }
+}
